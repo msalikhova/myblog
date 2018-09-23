@@ -135,12 +135,13 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
 
-
-EMAIL_HOST= 'smtp.gmail.com'
-EMAIL_PORT= 587
-EMAIL_HOST_USER= 'maliksalkhova@gmail.com'
-EMAIL_HOST_PASSWORD =''
-EMAIL_USE_TLS= True
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'maliksalikhova@gmail.com'
+EMAIL_HOST_PASSWORD = 'Move@USA2017'
+DEFAULT_FROM_EMAIL = 'maliksalikhova@gmail.com'
+SERVER_EMAIL = 'maliksalikhova@gmail.com'
 
 # Update database configuration with $DATABASE_URL.
 db_from_env = dj_database_url.config(conn_max_age=500)
